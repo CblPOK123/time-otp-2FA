@@ -4,10 +4,13 @@
 вообще это portable версия pyotp(https://pypi.org/project/pyotp/) 
 
 Вот пример: 
+```Python
 from time_otp_2FA import timeotp
 print(timeotp("B7S7GYYZWRHXIDAPFBMGOO5QU4WEKVD4"))
+```
 
 Без скрипта :
+```Python
 import calendar, datetime, time, base64, hashlib, hmac
 
 def timeotp(secret):
@@ -39,3 +42,4 @@ def timeotp(secret):
  return str_code[-6 :]
 
 print(timeotp("B7S7GYYZWRHXIDAPFBMGOO5QU4WEKVD4"))
+```
